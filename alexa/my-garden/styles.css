@@ -1,0 +1,15 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: -20%;
+}
+
+.plant img{
+    width: 100%;
+}
