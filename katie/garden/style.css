@@ -1,0 +1,126 @@
+
+
+
+
+
+
+body {
+    cursor: url('file:///Users/katieschallick/digitalgarden/images/binoculars.png'), pointer, auto;
+
+}
+
+
+.garden {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 75vw;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 10px;
+    padding: 50px;
+}
+
+@media only screen and (max-width: 900px)
+{
+.garden { 
+    display: block;}
+}
+
+.hover {
+    position: absolute;
+    visibility: hidden;
+}
+
+#one {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+}
+
+#one:hover .hover{
+    visibility: visible;
+}
+
+#two {
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+}
+
+#two:hover .hover{
+    visibility: visible;
+}
+
+#three {
+    grid-column: 3;
+    grid-row: 1;
+    position: relative;
+}
+
+#three:hover .hover{
+    visibility: visible;
+}
+
+.four {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#five {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    position: relative;
+}
+
+#five:hover .hover{
+    visibility: visible;
+}
+
+#six {
+    grid-column: 1;
+    grid-row: 3;
+    position: relative;
+}
+
+#six:hover .hover{
+    visibility: visible;
+}
+
+#seven {
+    grid-column: 2 / 3;
+    grid-row: 3;
+    position: relative;
+}
+
+#seven:hover .hover{
+    visibility: visible;
+}
+
+img{
+    display:block;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: 'Prata';
+    font-size: 35px;
+    text-align: center;
+    line-height: 0.5;
+}
+
+p {
+    font-family: 'Prata';
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
