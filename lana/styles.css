@@ -1,0 +1,51 @@
+h1 {
+    background-color: #deff91;
+    color: #879c59;
+    font-family: Andale Mono, monospace;
+    font-size: 140%;
+}
+
+h2 {
+    background-color: #deff91;
+    color: #879c59;
+    font-family: Andale Mono, monospace;
+    font-size: 110%;
+    width: 70%;
+}
+
+p {
+    background-color: #deff91;
+    color: #879c59;
+    font-family: Andale Mono, monospace;
+    font-size: 90%;
+    width: 70%;
+}
+
+a {
+    color: #72854c;
+}
+
+body {
+    background-color: #deff91;
+    color: #879c59;
+    padding: 5% 15%;
+    width: 70%;
+    margin: auto;
+}
+
+img {
+    background-image: url(images/clouds.gif);
+    border: 5px dotted;
+    border-colour: #879c59;
+    width: 70%;
+    margin: auto;
+    opacity: 80%;
+}
+
+#gif {
+
+    border: 5px dotted;
+    border-colour: #879c59;
+    width: 70%;
+    opacity: 80%;
+}

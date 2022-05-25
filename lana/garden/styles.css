@@ -1,0 +1,60 @@
+body{
+	overflow: hidden;
+  	background-image: url(images/aquascape.jpeg);
+    background-size: cover;
+  	box-sizing: border-box;
+	  font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+.garden {
+    width: 95vw;
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 10% 300px repeat(2, auto);
+    grid-template-rows: 20px repeat(3, auto);
+    gap: 10px;
+    border: none;
+}
+
+.angelfish {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    background-color: none;
+}
+
+.blue-neocaridina-davidi {
+    grid-column: 5;
+    grid-row: 18;
+    background-color: none;
+    width: 40%;
+}
+
+.cherry-barb {
+    grid-column: 3 / 4;
+    grid-row: 2 / 5;
+    background-color: none;
+}
+
+.crystal-red-shrimp {
+    grid-column: 4;
+    grid-row: 3;
+    background-color: none;
+}
+
+.neon-tetra {
+    grid-column: 2;
+    grid-row: 4;
+    background-color: none;
+    width: 150%;
+}
+
+.zebra-danio {
+    grid-column: 3;
+    grid-row: 4;
+    background-color: none;
+}
+
+img {
+    width: 40%;
+}

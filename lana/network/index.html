@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>don't be shy, jump</title>
+    <style>
+        @font-face {
+            font-family: Avara-black;
+            src: url(fonts/Avara-master/fonts/Avara-Black.otf)
+        }
+
+        body {
+            background-image: url(images/clouds.gif);
+            background-size: cover;
+        }
+
+        .clouds {
+            display: grid;
+            width: 80vw;
+            height: 80vh;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 33% 33% 33%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        .hover {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        #one {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        #two {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        a {
+            text-decoration: none;
+            color: #757575;
+            -webkit-transition: color 1s;
+            /* For Safari 3.0 to 6.0 */
+            transition: color 1s;
+            /* For modern browsers */
+        }
+
+        a:hover {
+            color: #333333;
+        }
+
+        p {
+            font-family: Avara-black;
+            color: #757575;
+            margin-top: 150px;
+            margin-left: 320px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="clouds">
+        <div id="one">
+            <a href="index-2.html">
+                <img src="images/types-of-clouds.jpeg"
+                    style="object-fit: cover; width: 80%; border: 2px dotted #757575;">
+            </a>
+        </div>
+
+        <div id="two">
+            <p><a href="index-2.html">don't be shy, jump</a>
+            </p>
+        </div>
+
+
+    </section>
+</body>
+
+</html>

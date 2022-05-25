@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fly higher or land</title>
+    <style>
+        @font-face {
+            font-family: Avara-black;
+            src: url(fonts/Avara-master/fonts/Avara-Black.otf)
+        }
+
+        body {
+            background-image: url(images/clouds.gif);
+            background-size: cover;
+        }
+
+        .clouds {
+            display: grid;
+            width: 80vw;
+            height: 80vh;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 33% 33% 33%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        #one {
+            grid-column: 1;
+            grid-row: 2;
+            margin-left: 277px;
+        }
+
+        #two {
+            grid-column: 2;
+            grid-row: 2;
+            margin-left: 320px;
+        }
+
+        #three {
+            grid-column: 2;
+            grid-row: 2;
+            margin-top: 195px;
+            margin-left: 320px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #757575;
+            -webkit-transition: color 1s;
+            /* For Safari 3.0 to 6.0 */
+            transition: color 1s;
+            /* For modern browsers */
+        }
+
+        a:hover {
+            color: #333333;
+        }
+
+        p {
+            font-family: Avara-black;
+            color: #757575;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="clouds">
+        <div id="one">
+            <iframe width="410" height="231"
+                src="https://www.youtube.com/embed/F29kpua3Im4?controls=0&amp;start=5&autoplay=1&mute=1"
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div id="two">
+            <p><a href="index-3.html">fly higher</a>
+            </p>
+        </div>
+
+        <div id="three">
+            <p><a href="index-4.html">land</a>
+            </p>
+        </div>
+
+    </section>
+</body>
+
+</html>
