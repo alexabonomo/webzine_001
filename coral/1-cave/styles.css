@@ -1,0 +1,21 @@
+html {
+  
+}
+
+body {
+  background-image: url('https://media3.giphy.com/media/gigArxA4MQK0qK1IJG/giphy.gif?cid=790b761101c29ece6c4f6826d3c306563b905e326634c18d&rid=giphy.gif&ct=g');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #f7f4ed;
+  
+  margin-left: 70%;
+  margin-right: 3%;
+  margin-top: 50px;
+  color: #020202;
+  line-height: 35px;
+}
+
+p {
+  font-family: 'Josefin Slab';
+
+}
