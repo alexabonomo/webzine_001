@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet"/> 
+    <script src="myscripts.js"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Shrikhand|Space+Grotesk">
     <title>homepage</title>
@@ -15,22 +16,99 @@
 
 </header>
 
-    <body> 
+    <body id="container"> 
     <div class="the-whole-damn-thing">
 
         <div class="words-words-words">
-            <h1>lookin' for the right tune?</h1>
+            <h1>look ma! I can code!</h1>
     
-            <p>I listen to music— <i>a lot</i> of music. Let me be your musical guide. Come with me on a journey to find the perfect song for your mood. Don't believe me? Give it a go. I <i>guarentee</i> one of the songs below, hand-picked by me, musical genius and connoisseur Katie Schallick, will scratch the deep musical itch you've been agonizing over for all these years. </p>
+            <p>I survived six weeks of coding! Enjoy my lil' collection of things I made along the way. </p>
         </div>    
 
-        <a href="../katie/tunes/index.html"><img src="images/folder.png" height="250px"></img></a>
+        <img src="images/folder.png" height="250px" 
+        onmouseover="src='images/ope.png'" onmouseout="src='images/folder.png'" onclick="document.getElementById('reveal-1').style.display='block'"></img>
 
-        <a href="../katie/garden/index.html"><img src="images/folder.png" height="250px"></img></a>
+       <img src="images/folder.png" height="250px" 
+       onmouseover="src='images/ope.png'" onmouseout="src='images/folder.png'"
+       onclick="document.getElementById('reveal-2').style.display='block'"></img></a>
             
-        <a href="../katie/network/index.html"><img src="images/folder.png" height="250px"></img></a>
-    </div>  
+        <img src="images/folder.png" height="250px" 
+        onmouseover="src='images/ope.png'" onmouseout="src='images/folder.png'"
+        onclick="document.getElementById('reveal-3').style.display='block'" ></img>
+        </div>
+    </div> 
+    
+    <div id="reveal-1" class="draggable">
+        <h3 style="text-align:right; font-size: 20px;" onclick="document.getElementById('reveal-1').style.display='none'">X</h3>
+        <h2>Welcome to my Homepage</h2>
+        <h3>We are returning to the early days of the internet and establishing our own home pages. This can be a page that you feel would invite a visitor like you would when you open your door to your home.</h3> 
+        <div class="button">
+            <a href="../katie/tunes/index.html" ><h3 style="color:blue;">Check out what I made</h3></a>
+        </div> 
+    </div>
+
+    <div id="reveal-2" class="draggable">
+        <h3 style="text-align:right; font-size: 20px;" onclick="document.getElementById('reveal-2').style.display='none'">X</h3>
+        <h2>What can live in a digital garden?</h2>
+        <h3>What better way to practice than designing a layout for our own garden? Your garden can be literal or metaphorical, meaning it could be of plants or other entities. Collect whatever will live in the garden and place them in the layout of your choosing. </h3>
+        <div class="button">
+            <a href="../katie/garden/index.html" ><h3 style="color:blue;">Check out what I made</h3></a>
+        </div>   
+    </div>
+
+    <div id="reveal-3" class="draggable">
+        <h3 style="text-align:right; font-size: 20px;" onclick="document.getElementById('reveal-3').style.display='none'">X</h3>
+        <h2>The Outernet</h2>
+        <h3>"A little bird told me, “Hyperlinks are the oxygen of the web.” How many links can you make in one writing (poem, prose, manifesto, etc.)?" - Laurel Schwulst. You know the internet, now imagine "the Outernet": a neural network that is a technologically advanced version of the Internet. </h3>
+        <div class="button">
+            <a href="../katie/network/index.html" ><h3 style="color:blue;">Check out what I made</h3></a>
+        </div>    
+    </div>
+
     </body>
 
+    <script>
+        var draggableElements = document.getElementsByClassName("draggable");
+console.log(draggableElements.length); //checking that array exists and is populated
 
+for(var i = 0; i < draggableElements.length; i++){
+    dragElement(draggableElements[i]);
+}
+
+function dragElement(element) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    element.onmousedown = dragMouseDown;
+
+    function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+        element.style.top = (element.offsetTop - pos2) + "px";
+        element.style.left = (element.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElement() {
+        // stop moving when mouse button is released:
+        document.onmouseup = null;
+        document.onmousemove = null;
+    }
+}
+
+    </script>
 </html>

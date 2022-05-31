@@ -11,27 +11,70 @@ header{
 }
 
 body{
-    background: #b2cbe4;
+    background: rgb(14,0,255);
+background: linear-gradient(0deg, rgba(14,0,255,1) 0%, rgba(132,171,255,1) 24%, rgba(255,255,255,1) 60%);
     margin: 0;
    
 }
 
 div.the-whole-damn-thing {
-    background-color: aliceblue;
     margin: auto;
     position: absolute;
     text-align: center;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 50%;
+    top: 45%;
     width: 80%;
-    padding-bottom: 300px;     
+    padding-bottom: 20px;    
 }
 
 div.words-words-words {
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
+    padding-bottom: 20px;
+}
+
+.button {
+    background-color: white;
+    padding: 10px;
+
+}
+
+.draggable {
+    background-color: #2600ff;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ffffff;
+    box-shadow: 15px 15px white;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    touch-action: none;
+    user-select: none;
+    cursor: move;
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+ #reveal-1 {   
+    top: 8%;
+    left: 65%;
+    width: 350px;
+}
+
+#reveal-2 {
+    top: 20%;
+    left: 5%;
+    width: 350px;
+}
+
+#reveal-3 {
+    top: 60%;
+    left: 30%;
+    width: 500px;
 }
 
 h1{
@@ -53,11 +96,22 @@ h1{
 
 h2{
     font-family: 'Shrikhand';
+    text-align: center;
+    line-height: 95%;
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: -1px;
     color:#ffffff; 
     text-shadow: 1px 1px #36249C;
+}
+
+h3{
+    font-family: 'Space Grotesk';
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 150%;
+    letter-spacing: -0.5px;
 }
 
 p{
