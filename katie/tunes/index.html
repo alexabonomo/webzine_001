@@ -3,8 +3,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Shrikhand|Space+Grotesk">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand|Space+Grotesk">
+    <script src= "https://code.jquery.com/jquery-3.5.0.min.js"> </script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <title>TUNES</title>
 </head>
 <style>
@@ -19,6 +21,7 @@
 
     header{
         background: white;
+        text-align: center;
         height: 30px;
         padding-top: 0.25px;
         padding-bottom: 10px;
@@ -60,6 +63,13 @@
         text-shadow: 1px 1px #36249C;
     }
 
+    h3{
+        font-family: 'Space Grotesk';
+        font-size: 25px;
+        letter-spacing: -0.5px;
+        color: #36249C; 
+    }
+
     p{
         font-family: 'Space Grotesk';
         font-size: 13px;
@@ -68,10 +78,13 @@
         letter-spacing: -0.5px;
     }
 
-    marquee{
-        font-family: 'Space Grotesk';
-        font-size: 25px;
-        letter-spacing: -0.5px;
+    a:link{
+        text-decoration: none;
+        color:#36249C;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
     
     div.title{
@@ -105,14 +118,16 @@
 
 <header>
    
-    <p style="text-align: left">TUNES-OF-EVERY-KIND.PDF&emsp;|&emsp;ALL OF THE PLAYLISTS I OWN&emsp;|&emsp;LOST ERA OF MUSIC</p>
+    <div>
+     <p><a href="https://open.spotify.com/playlist/2cqDhV3ghcjovgKUovJQdd?si=ca5d1d26f75547e5">MY BEST PLAYLIST</a>&emsp;|&emsp;<a href="https://open.spotify.com/playlist/3ahXhtD2k6FlCRjKscgVPY?si=86436fa413e941fa">MY WORST PLAYLIST</a>&emsp;|&emsp;<a href="https://open.spotify.com/user/1235510740?si=2ccb5e925c134cd0">ALL MY PLAYLISTS</a></p>
+    </div> 
 
 </header>
 
 <body>
 
-    <div class="Top-Bar">
-        <marquee> TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ </marquee></div>
+    <div class="marquee-maybe">
+        <h3> TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ TUNE EMPORIUM ☆ BUY ONE GET ONE ☆ </h3></div>
 
     <div class="Container">    
     
@@ -149,4 +164,35 @@
     </div>
 
 </body>
+
+<script>
+    $(function() {
+      $('.marquee-maybe')
+        .marquee({
+          //If you wish to always animate using jQuery
+          allowCss3Support: true
+          , //works when allowCss3Support is set to true - for full list see http://www.w3.org/TR/2013/WD-css3-transitions-20131119/#transition-timing-function
+          css3easing: 'linear'
+          , //requires jQuery easing plugin. Default is 'linear'
+          easing: 'linear'
+          , //pause time before the next animation turn in milliseconds
+          delayBeforeStart: 0
+          , //'left', 'right', 'up' or 'down'
+          direction: 'left'
+          , //true or false - should the marquee be duplicated to show an effect of continues flow
+          duplicated: false
+          , //speed in milliseconds of the marquee in milliseconds
+          duration: 35000
+          , //gap in pixels between the tickers
+          gap: 20
+          , //on cycle pause the marquee
+          pauseOnCycle: false
+          , //on hover pause the marquee - using jQuery plugin https://github.com/tobia/Pause
+          pauseOnHover: false
+          , //the marquee is visible initially positioned next to the border towards it will be moving
+          startVisible: true
+        });
+    });
+  </script>
+
 </html>
