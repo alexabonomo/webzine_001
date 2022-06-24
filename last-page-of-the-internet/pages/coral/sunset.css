@@ -1,0 +1,19 @@
+
+body {
+    background-image: url('../links/sunset.gif');
+    background-color: #181818;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
+    color: #ffffff;
+    line-height: 35px;
+  }
+
+  p {
+    font-family: 'postpress-regular';
+    align-content: center;
+    
+  }
+  

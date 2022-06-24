@@ -1,0 +1,23 @@
+
+
+.warning {
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: none;
+}
+
+h1 {
+    font-size:120px;
+    line-height: 110%;
+    hyphens: auto;
+    text-align: justify;
+    font-family: Playfair Display;
+    font-weight: 200;
+    letter-spacing: -2px;
+}
+
+a {
+   text-decoration: none;
+   color:black;
+   font-style: italic; 
+}
